@@ -66,8 +66,6 @@ def download_brats_dataset() -> Path:
 
     print(f"📦 Downloading BraTS 2020 dataset from Kaggle ({KAGGLE_DATASET})...")
     print("   This may take several minutes on first run.")
-    print("   Note: Requires Kaggle API credentials (~/.kaggle/kaggle.json).")
-    print("   Set up at: https://www.kaggle.com/settings → API → Create New Token")
     downloaded_path = Path(kagglehub.dataset_download(KAGGLE_DATASET))
     print(f"✓ Downloaded to {downloaded_path}")
 
